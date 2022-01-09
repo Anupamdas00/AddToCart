@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-fluid{
+    padding: 8px;
+    background-color: rgb(220, 220, 250);
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.row{
+    width: 90%;
+    margin: 0px auto;
+    /* box-shadow: 1px 1px 5px 1px rgb(178, 178, 180), -1px -1px 5px 1px rgb(178, 178, 180) ; */
+}
+
+/* .col-md-8{
+
+} */
+
+.col-md-4{
+    height: 350px;   
+}
+
+.banner{
+    padding: 8px;
+    background-color: #fff;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 1px rgb(195, 195, 197);
+}
+
+.banner img{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+    margin: 3px auto;
+    width: 256px;
+    height: 200px;
+}
+
+.table-responsive-lg{
+    padding: 0 auto;
+}
+
+
+.table{
+    display: block;
+    overflow-y: auto;
+    height: 450px;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table thead{
+    text-align: center;
+}
+.table tbody{
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.table tbody img{
+    width: 80px;
+    height: 100px;
+}
+
+.table tbody tr{
+    /* display: flex; */
+    outline: none;
+    border: none;
+    width: ;
+}
+
+.banner-footer{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-70% );
+    margin-top: 19px
+}
+
+.banner-footer p:nth-child(1){
+    font-size: 20px;
+}
+
+.banner-footer p:nth-child(2){
+    font-size: 13px;
+}
+
+.btn-primary{
+    width: 180px;
+    padding: 8px;
+}
+
+.d-flex button{
+    width: 100px;
+    padding: 1px 1px;
+    margin: 10px;
+}
+
+.check-btn{
+    margin-top: 25px;
+}

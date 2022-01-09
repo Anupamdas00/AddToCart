@@ -1,0 +1,17 @@
+<header>
+    <div class="navbar navbar-sm shadow-sm navbar-dark bg-primary fixed-top ">
+        <div class="navbar-brand align-item-center d-flex my-auto" routerLink="">
+            <i class="fas fa-shipping-fast"></i>
+            &nbsp;<strong>Flipkart</strong>  
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="search products">
+            </div>
+            <span class="fas fa-search search-icon" ></span>
+        </div>
+        <button class="btn btn-primary me-2" routerLink="cart" >
+                <i style="font-size: 25px;" class="fas fa-cart-plus "></i>
+                <div class="badge bg-danger" *ngIf="totalCartProd != 0">{{totalCartProd}}</div>
+        </button>
+    </div>
+</header>
+

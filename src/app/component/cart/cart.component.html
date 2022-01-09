@@ -1,0 +1,74 @@
+<ng-container *ngIf="cartProducts.length != 0">
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 48px;">
+            <div class="col-md-8" >
+                <div class="table-responsive-lg bg-light p-2" >
+                    <h5 class="text-left display-6 text-center ">You have {{totalCartProd}} products to check out</h5>
+                        <table class="table table-borderless" >
+                            <tbody *ngFor="let product of cartProducts">
+                                <tr class="border border-1 ">
+                                    <td class="p-4 "><img src="{{product.image}}" alt=""></td>
+                                    <td>
+                                        <tr>
+                                            <td class="p-2 fw-bold " > {{product.title}} </td> 
+                                        </tr>
+                                        <tr>
+                                            <!-- <td class="p-2"><strong>Description:</strong>{{product.description}} </td> -->
+                                            <td class="p-2" > <strong>Quantity: </strong> {{product.quantity}} </td>
+                                        </tr>
+                                        <tr class="mb-0">
+                                            <td class="p-2"> <strong>Price: </strong><i class="fas fa-rupee-sign" style="font-size: 13px;"></i> {{product.price | currencyCon:75 }} </td>
+                                        </tr>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn-close" aria-label="Close" (click)="removeItem(product)"></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                          <div class="d-flex justify-content-end my-2">
+                            <button class="btn btn-primary" routerLink='' >Shop More</button>
+                            <button class="btn btn-danger" (click)="emptyCart()"  >Remove all</button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-4 bg-light p-4 border border-1">
+                <h5 class="text-muted mt-3" >PRICE DETAILS</h5>
+                <div class="d-flex justify-content-between " >
+                    <p class="m-2">Price({{totalCartProd}})</p>
+                    <p class="m-2" ><i class="fas fa-rupee-sign" style="font-size: 13px;"></i>{{grandTotal |  currencyCon : 75}}</p>
+                </div>
+                <div class="d-flex justify-content-between " >
+                    <p class="m-2 ">Delivery Charges</p>
+                    <p class="m-2 text-warning fw-bold">Free </p>
+                </div>
+                <div class="d-flex justify-content-between " >
+                    <p class="m-2 fs-4">Total Amount</p>
+                    <p class="m-2 fs-4 fw-bold"><i class="fas fa-rupee-sign"></i>{{grandTotal | currencyCon : 75}} </p>
+                </div>
+                <div class="check-btn">
+                    <button class="btn btn-success me-0">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ng-container>
+
+
+
+
+
+<ng-container *ngIf="cartProducts.length === 0" >
+    <div class="container-fluid">
+        <div class="banner">
+            <h5 >My Cart</h5>
+            <img src="../../../assets/img/cart_banner.png" alt="cart">
+            <div class="banner-footer text-center">
+                <p>Your cart is empty!</p>
+                <p>Add items to it now.</p>
+                <button class="btn btn-primary" routerLink="" >Shop now</button>
+            </div>
+        </div>
+    </div>
+</ng-container>

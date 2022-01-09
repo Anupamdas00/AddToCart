@@ -1,0 +1,35 @@
+.navbar{
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: 0px 1px 4px 4px rgb(158, 156, 156);
+}
+
+.navbar-brand i{
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.navbar-brand strong{
+    margin-top: 3px;
+    font-style: italic;
+}
+
+.navbar-brand i,strong{
+    cursor: pointer;
+}
+
+.form-control{
+    margin-left: 13px;
+    width: 555px;
+}
+
+.search-icon{
+    position: absolute;
+    z-index: 10;
+    right: 50%;
+    color: blueviolet;
+    margin-top: 10px;
+    cursor: pointer;
+}

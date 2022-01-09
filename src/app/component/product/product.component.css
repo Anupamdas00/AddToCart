@@ -1,0 +1,52 @@
+/* .card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+} */
+
+.container-fluid{
+    margin-top: 57px;
+}
+
+.item{
+    padding: 0;
+    text-align: center;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.item :hover{
+    transform: scale(1.1);
+}
+
+.item p:hover{
+    color: blue;
+}
+
+.d-flex{
+    padding: 5px;
+}
+
+.item img{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#product{
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px ;
+}
+
+#product img{
+    width: 150px;
+    height: 180px;
+    transition: 0.3s ease-in-out;
+    margin: 0px auto;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+}
